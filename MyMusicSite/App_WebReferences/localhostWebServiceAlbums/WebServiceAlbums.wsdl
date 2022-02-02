@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlbumByArtist1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Artist" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlbumByArtist1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlbumByArtist1Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlbumByArtist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Artist" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlbumByArtistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlbumByArtistResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlbumByCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codealbum" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlbumByCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlbumByCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSongsByAlbumName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Album" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSongsByAlbumNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSongsByAlbumNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlbumByArtist1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlbumByArtist1" />
+  </wsdl:message>
+  <wsdl:message name="GetAlbumByArtist1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlbumByArtist1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetAlbumByArtistSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlbumByArtist" />
+  </wsdl:message>
+  <wsdl:message name="GetAlbumByArtistSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlbumByArtistResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlbumByCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlbumByCode" />
+  </wsdl:message>
+  <wsdl:message name="GetAlbumByCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlbumByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSongsByAlbumNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSongsByAlbumName" />
+  </wsdl:message>
+  <wsdl:message name="GetSongsByAlbumNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSongsByAlbumNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceAlbumsSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByArtist1">
+      <wsdl:input message="tns:GetAlbumByArtist1SoapIn" />
+      <wsdl:output message="tns:GetAlbumByArtist1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByArtist">
+      <wsdl:input message="tns:GetAlbumByArtistSoapIn" />
+      <wsdl:output message="tns:GetAlbumByArtistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByCode">
+      <wsdl:input message="tns:GetAlbumByCodeSoapIn" />
+      <wsdl:output message="tns:GetAlbumByCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSongsByAlbumName">
+      <wsdl:input message="tns:GetSongsByAlbumNameSoapIn" />
+      <wsdl:output message="tns:GetSongsByAlbumNameSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceAlbumsSoap" type="tns:WebServiceAlbumsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByArtist1">
+      <soap:operation soapAction="http://tempuri.org/GetAlbumByArtist1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByArtist">
+      <soap:operation soapAction="http://tempuri.org/GetAlbumByArtist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByCode">
+      <soap:operation soapAction="http://tempuri.org/GetAlbumByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSongsByAlbumName">
+      <soap:operation soapAction="http://tempuri.org/GetSongsByAlbumName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceAlbumsSoap12" type="tns:WebServiceAlbumsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByArtist1">
+      <soap12:operation soapAction="http://tempuri.org/GetAlbumByArtist1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByArtist">
+      <soap12:operation soapAction="http://tempuri.org/GetAlbumByArtist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbumByCode">
+      <soap12:operation soapAction="http://tempuri.org/GetAlbumByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSongsByAlbumName">
+      <soap12:operation soapAction="http://tempuri.org/GetSongsByAlbumName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceAlbums">
+    <wsdl:port name="WebServiceAlbumsSoap" binding="tns:WebServiceAlbumsSoap">
+      <soap:address location="http://localhost:15131/MyMusicService/WebServiceAlbums.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceAlbumsSoap12" binding="tns:WebServiceAlbumsSoap12">
+      <soap12:address location="http://localhost:15131/MyMusicService/WebServiceAlbums.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

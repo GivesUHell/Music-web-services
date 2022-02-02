@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArtists">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetArtistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArtistsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArtistByCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codeartist" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArtistByCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArtistByCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSongsByArtistName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSongsByArtistNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSongsByArtistNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckValidArtist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckValidArtistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckValidArtistResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArtistsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArtists" />
+  </wsdl:message>
+  <wsdl:message name="GetArtistsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArtistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetArtistByCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArtistByCode" />
+  </wsdl:message>
+  <wsdl:message name="GetArtistByCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArtistByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSongsByArtistNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSongsByArtistName" />
+  </wsdl:message>
+  <wsdl:message name="GetSongsByArtistNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSongsByArtistNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckValidArtistSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckValidArtist" />
+  </wsdl:message>
+  <wsdl:message name="CheckValidArtistSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckValidArtistResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceArtistsSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArtists">
+      <wsdl:input message="tns:GetArtistsSoapIn" />
+      <wsdl:output message="tns:GetArtistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArtistByCode">
+      <wsdl:input message="tns:GetArtistByCodeSoapIn" />
+      <wsdl:output message="tns:GetArtistByCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSongsByArtistName">
+      <wsdl:input message="tns:GetSongsByArtistNameSoapIn" />
+      <wsdl:output message="tns:GetSongsByArtistNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckValidArtist">
+      <wsdl:input message="tns:CheckValidArtistSoapIn" />
+      <wsdl:output message="tns:CheckValidArtistSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceArtistsSoap" type="tns:WebServiceArtistsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArtists">
+      <soap:operation soapAction="http://tempuri.org/GetArtists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArtistByCode">
+      <soap:operation soapAction="http://tempuri.org/GetArtistByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSongsByArtistName">
+      <soap:operation soapAction="http://tempuri.org/GetSongsByArtistName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValidArtist">
+      <soap:operation soapAction="http://tempuri.org/CheckValidArtist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceArtistsSoap12" type="tns:WebServiceArtistsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArtists">
+      <soap12:operation soapAction="http://tempuri.org/GetArtists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArtistByCode">
+      <soap12:operation soapAction="http://tempuri.org/GetArtistByCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSongsByArtistName">
+      <soap12:operation soapAction="http://tempuri.org/GetSongsByArtistName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValidArtist">
+      <soap12:operation soapAction="http://tempuri.org/CheckValidArtist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceArtists">
+    <wsdl:port name="WebServiceArtistsSoap" binding="tns:WebServiceArtistsSoap">
+      <soap:address location="http://localhost:4894/MyMusicService/WebServiceArtists.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceArtistsSoap12" binding="tns:WebServiceArtistsSoap12">
+      <soap12:address location="http://localhost:4894/MyMusicService/WebServiceArtists.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

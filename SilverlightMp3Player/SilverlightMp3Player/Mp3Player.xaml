@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="SilverlightMp3Player.Mp3Player"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:local="clr-namespace:Mp3AudioPlayer"
+    Height="25" Width="260" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <UserControl.Resources>
+        <Storyboard x:Name="OpenPlayer">
+            <DoubleAnimation From="0" To="200" Duration="00:00:0.5" Storyboard.TargetName="MiddleBorder" Storyboard.TargetProperty="Width">
+                <DoubleAnimation.EasingFunction>
+                    <QuarticEase EasingMode="EaseOut"></QuarticEase>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="ClosePlayer">
+            <DoubleAnimation From="200" To="0" Duration="00:00:0.5" Storyboard.TargetName="MiddleBorder" Storyboard.TargetProperty="Width">
+                <DoubleAnimation.EasingFunction>
+                    <QuarticEase EasingMode="EaseOut"></QuarticEase>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="30"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="LightGray" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="5,0,0,5" BorderThickness="0,0,1,0" BorderBrush="Turquoise">
+            <Grid>
+                <TextBlock x:Name="TextLeft" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Text="X" FontFamily="Webdings"></TextBlock>
+                <Grid Visibility="Collapsed" Cursor="Hand" MouseEnter="VolumeControl_MouseEnter" MouseLeave="VolumeControl_MouseLeave" MouseLeftButtonDown="VolumeControl_MouseLeftButtonDown" MouseMove="VolumeControl_MouseMove" MouseLeftButtonUp="VolumeControl_MouseLeftButtonUp" x:Name="VolumeControl" Margin="5,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Border VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Opacity="0.5"></Border>
+                    <Border x:Name="VolumeLevel" Width="10" VerticalAlignment="Stretch" HorizontalAlignment="Left" Background="Black"></Border>
+                    <Path Fill="LightGray" Stretch="Fill" UseLayoutRounding="False" Data="M-1.7763568E-15,0 L18.9375,0.0625 L3.5527137E-15,14.994951 z" Margin="-0.5,-0.5,-0.438,-0.375"/>
+                </Grid>
+            </Grid>
+        </Border>
+        <Border Width="0" x:Name="MiddleBorder" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Turquoise">
+            <Grid Margin="1,0,1,0" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="15"></RowDefinition>
+                    <RowDefinition Height="1"></RowDefinition>
+                    <RowDefinition Height="5"></RowDefinition>
+                </Grid.RowDefinitions>
+                <MediaElement x:Name="Media" AutoPlay="False"></MediaElement>
+                <Border MouseLeftButtonDown="ProgressBar_MouseLeftButtonDown" Cursor="Hand" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <ProgressBar Background="Transparent" BorderThickness="0" Padding="0" Margin="0" Foreground="Blue" Minimum="0" Maximum="1" Value="0" x:Name="SongProgressBar" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></ProgressBar>
+                        <TextBlock Margin="0,0,5,0" HorizontalAlignment="Right" VerticalAlignment="Center" x:Name="TimeDisplay"></TextBlock>
+                        <TextBlock Margin="5,0,0,0" HorizontalAlignment="Left" Width="150" TextWrapping="NoWrap" VerticalAlignment="Center" x:Name="TitleDisplay"></TextBlock>
+                    </Grid>
+                </Border>
+                <Border Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <ProgressBar Background="Transparent" BorderThickness="0" Padding="0" Margin="0" Foreground="Red" Minimum="0" Maximum="1" Value="0" x:Name="DownloadProgressBar" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></ProgressBar>
+                </Border>
+            </Grid>
+        </Border>
+        <Border MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" Background="Gray" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" CornerRadius="0,5,5,0" BorderThickness="1,0,0,0" BorderBrush="Turquoise">
+            <Grid>
+                <TextBlock FontSize="20" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="PlayPauseButton" Text="4" FontFamily="Webdings" MouseLeftButtonDown="PlayPauseButton_MouseLeftButtonDown"></TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

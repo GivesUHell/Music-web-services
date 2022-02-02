@@ -1,0 +1,13 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\Mp3AudioPlayer.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\Mp3AudioPlayer.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\Mp3AudioPlayer.xap
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\TestPage.html
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\App.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\MainPage.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\Mp3Player.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\Mp3AudioPlayer.g.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\Mp3AudioPlayer.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\Mp3AudioPlayer.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\XapCacheFile.xml

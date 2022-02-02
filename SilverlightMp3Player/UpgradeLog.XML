@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SilverlightMp3Player">
+</Property><Property Name="Solution File" Value="C:\Users\Asaf\Desktop\SilverlightMp3Player\SilverlightMp3Player.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Asaf\Desktop\SilverlightMp3Player\SilverlightMp3Player.suo">
+</Property><Property Name="Date" Value="Sunday, March 18, 2012">
+</Property><Property Name="Time" Value="1:26 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SilverlightMp3Player.sln" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player.sln">
+</Event><Event ErrorLevel="0" Project="" Source="SilverlightMp3Player.suo" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player.suo">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\SilverlightMp3Player.csproj" Description="Project file successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\SilverlightMp3Player.csproj">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\SilverlightMp3Player.csproj.user" Description="Project user file successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\SilverlightMp3Player.csproj.user">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\App.xaml.cs" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\MainPage.xaml.cs" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\MainPage.xaml.cs">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\Mp3Player.xaml.cs" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\Mp3Player.xaml.cs">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\Properties\AppManifest.xml" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\Properties\AppManifest.xml">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\App.xaml" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\App.xaml">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\MainPage.xaml" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\MainPage.xaml">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\Mp3Player.xaml" Description="File successfully backed up as C:\Users\Asaf\Desktop\SilverlightMp3Player\Backup\SilverlightMp3Player\Mp3Player.xaml">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\SilverlightMp3Player.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SilverlightMp3Player" Source="SilverlightMp3Player\SilverlightMp3Player.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SilverlightMp3Player.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SilverlightMp3Player.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SilverlightMp3Player" Source="SilverlightMp3Player\SilverlightMp3Player.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

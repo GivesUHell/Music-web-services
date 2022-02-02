@@ -1,0 +1,39 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\App.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\MainPage.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\Mp3Player.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\Mp3AudioPlayer.g.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\Mp3AudioPlayer.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\Mp3AudioPlayer.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\Mp3AudioPlayer.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\Mp3AudioPlayer.xap
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\Bin\Debug\TestPage.html
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\Mp3AudioPlayer.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Mp3AudioPlayer\Mp3AudioPlayer\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\SilverlightMp3Player.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\SilverlightMp3Player.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\SilverlightMp3Player.xap
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\TestPage.html
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\App.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\MainPage.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\Mp3Player.g.cs
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\SilverlightMp3Player.g.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\SilverlightMp3Player.dll
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\SilverlightMp3Player.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\XapCacheFile.xml
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\AppManifest.xaml
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\SilverlightMp3Player.dll
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\SilverlightMp3Player.pdb
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\SilverlightMp3Player.xap
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\Bin\Debug\TestPage.html
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\ResolveAssemblyReference.cache
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\App.g.cs
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\MainPage.g.cs
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\Mp3Player.g.cs
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\SilverlightMp3Player.g.resources
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\SilverlightMp3Player.dll
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\SilverlightMp3Player.pdb
+C:\MyPersonalProjects\SilverlightMp3Player\SilverlightMp3Player\obj\Debug\XapCacheFile.xml

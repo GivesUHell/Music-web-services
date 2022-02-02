@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .style1
+        {
+            width: 100%;
+        }
+        .style4
+        {
+            width: 137px;
+        }
+        .style8
+        {
+            width: 339px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+      
+        <table class="style1">
+            <tr>
+                <td class="style8">
+                    &nbsp;</td>
+                <td>
+      
+        <asp:Menu ID="mTopMenu" runat="server" Orientation="Horizontal" Width="457px">
+            <Items>
+                <asp:MenuItem ImageUrl="~/Photos/My Page.gif" NavigateUrl="~/UserPage.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem ImageUrl="~/Photos/Manage Lists.gif" 
+                    NavigateUrl="~/ListsPageForUser.aspx"></asp:MenuItem>
+                <asp:MenuItem ImageUrl="~/Photos/Home Page.bmp" NavigateUrl="~/HomePage.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem ImageUrl="~/Photos/Artist page.gif" 
+                    NavigateUrl="~/RecognizedArtistsPage.aspx"></asp:MenuItem>
+                <asp:MenuItem ImageUrl="~/Photos/Add New Song.gif" 
+                    NavigateUrl="~/CreateNewSong.aspx"></asp:MenuItem>
+                <asp:MenuItem ImageUrl="~/Photos/LogOut.jpeg" NavigateUrl="~/Logout.aspx">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style8" dir="rtl">
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Size="Larger" Text="Find Songs"></asp:Label>
+                </td>
+                <td>
+                <asp:TextBox ID="TextBoxSearch" runat="server" Height="29px" Width="386px"></asp:TextBox>
+                </td>
+                <td>
+                <asp:Button ID="ButtonSearch" runat="server" onclick="ButtonSearch_Click" 
+                    Text="Search" Height="28px" CausesValidation="false"/>
+                <asp:DropDownList ID="DropDownListSearch" runat="server">
+                    <asp:ListItem Value="0">By Song Name</asp:ListItem>
+                    <asp:ListItem Value="1">By Artist</asp:ListItem>
+                    <asp:ListItem Value="2">By Album</asp:ListItem>
+                    <asp:ListItem Value="3">By Style</asp:ListItem>
+                </asp:DropDownList>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
